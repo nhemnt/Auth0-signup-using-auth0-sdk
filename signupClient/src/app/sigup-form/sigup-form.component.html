@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="row mx-auto">
+      <form (ngSubmit)="onSubmit(f)"  #f="ngForm">
+        <input
+          type="text"
+          name="firstName"
+          ngModel
+          required
+          placeholder="First Name"
+          class="form-control">
+        <input
+          type="text"
+          name="lastName"
+          ngModel
+          required
+          placeholder="Last Name"
+          class="form-control">
+        <input
+          type="email"
+          name="email"
+          ngModel
+          required
+          placeholder="Email"
+          class="form-control">
+        <input
+          type="password"
+          name="password"
+          ngModel
+          required
+          placeholder="Password"
+          class="form-control">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
